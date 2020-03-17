@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="title">pages/home/home.wxml</text>
 <button  type="primary">爱过</button>
+<view>1.知识点2</view>
+<view>呵呵呵呵</view>
