@@ -1,3 +1,19 @@
 <!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<!-- 1.小程序的数据绑定 {{}} -->
+<!-- <view>hello,lizhixiong</view> -->
+<view>heelo, {{Name}}</view>
+
+<view>我的年龄: {{age}}</view>
+
+<!-- 2. 循环列表的渲染 xw:for -->
+<view wx:for="{{students}}">
+  {{item.id}} - {{item.name}} - {{ item.age }}
+</view>
+
+
+<!-- 3.事件监听 -->
+
+<view>当前计数: {{ counter  }}</view>
+
+<button size="mini" type="primary" bindtap="add">+</button>
+<button size="mini" type="warn" bindtap="sub">-</button>
