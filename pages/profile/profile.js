@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/profile/profile.js
 Page({
 
   /**
@@ -64,8 +64,3 @@ Page({
 
   }
 })
-
-
-// b编程范式
-//1.命令式编程: 原生操作DOM
-//2.声明式编程: Vue/React

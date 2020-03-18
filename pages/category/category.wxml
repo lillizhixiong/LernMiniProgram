@@ -1,0 +1,13 @@
+<!--pages/category/category.wxml-->
+<text>pages/category/category.wxml</text>
+<view>商品分类</view>
+
+
+<!-- DOM树 -->
+<view>
+  <view>哈哈哈</view>
+  <view>哈哈哈</view>
+  <view>哈哈哈</view>
+  <view>哈哈哈</view>
+  <view>哈哈哈</view>
+</view>
