@@ -1,3 +1,15 @@
 <!--pages/home/home.wxml-->
 <text class="title">pages/home/home.wxml</text>
 <button  type="primary">爱过</button>
+
+
+<view>获取用户信息步骤</view>
+<view>1.定义一个Button按钮</view>
+<view>2.给butotn添加一个open-type属性= "getUserInfo"</view> 
+<view>3.给button绑定一个bindgetUserInfo事件</view>
+
+<button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取授权</button>
+
+第三种方式展示y用户信息,通过open-data组件 设置type值展示用户内容
+<open-data type='userNickName'></open-data>
+<open-data type='userAvatarUrl'></open-data>
