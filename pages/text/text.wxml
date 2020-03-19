@@ -1,0 +1,21 @@
+<!--pages/text/text.wxml-->
+<!-- 1.基本使用 -->
+<text>Hello World</text>
+
+<text>你好啊,小程序\n</text>
+
+<!-- 2.text的基本属性 -->
+<!-- 默认的情况下text长按是选中不了文本的 -->
+
+<!-- selectable="{{false}}" 默认为false -->
+<text selectable="{{true}}">你好的小程序\n</text>
+<text selectable>你好的小程序\n</text>
+
+<!-- space属性 决定空格的大小 -->
+<text>heelo lizhixiong</text>
+
+<!-- decode: 解码文本 -->
+<!-- 作用:从服务器请求回来的数据包含特殊实体需要解码 -->
+<text decode>&gt;</text>
+
+
