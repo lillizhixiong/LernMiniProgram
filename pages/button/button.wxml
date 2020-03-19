@@ -1,0 +1,20 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button的基本使用 -->
+<button>按钮</button>
+
+<!-- 2.按钮的基本属性 size='mini'-->
+<button size="mini">我是按钮</button>
+
+<!-- 3.按钮的基本属性 type: primary default warn -->
+<button size='mini' type="primary">按钮</button>
+<button size='mini' type="default">按钮</button>
+<button size='mini' type="warn">按钮</button>
+
+<!-- 4.按钮的基本属性: plain 镂空效果 -->
+<button plain size="mini">我是按钮啊</button>
+
+<!-- 5.按钮的基本属性: disable 不可用 -->
+
+<!-- 6.按钮的基本属性: loading -->
+
+<!-- 7.按钮的基本属性: hover-class='类名' -->
