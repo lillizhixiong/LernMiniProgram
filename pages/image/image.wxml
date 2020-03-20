@@ -1,0 +1,26 @@
+<!--pages/image/image.wxml-->
+<!-- 1.image组件的基本使用 -->
+
+<!--
+ 重点:
+  1. image组件可以写成单标签,也可以写成双标签
+  2.image组件默认有自己的大小  320 X 240
+  3.image组件是行内替换元素
+ -->
+ <!-- <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" ></image> -->
+
+ <!-- 2.bindload图片加载完成调用的事件 -->
+ <!-- 3.lazy-load图片的懒加载 -->
+ <!-- 4.长按图片出现识别小程序码show-menu-by-longpress -->
+ <!-- 5.mode显示模式; 查看文档. -->
+ <!-- ------------------------------------- -->
+ <view>
+  <image  wx:for='{10}'
+  src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" 
+    bindload="loadImage"
+    lazy-load
+  ></image>
+ </view>
+
+<!-- 补充:如果需要显示相册里面b的图片 -->
+<button bindtap="chooseImage">选中图片</button>
