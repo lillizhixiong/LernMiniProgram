@@ -1,0 +1,17 @@
+<!--pages/view/view.wxml-->
+<!-- 1.view的基本使用 -->
+<view class="box">我是view组件</view>
+<view>heheh</view>
+
+
+<!-- 2.view的基本属性: hover-class -->
+<view hover-class='active' hover-stay-time='1000'>当按下的时候: 会产生的样式hover-class</view>
+<view>d</view>
+<!-- 3.hover-stay-time属性:: 就是点击hover-class样式保留的时间 -->
+<view>我是view组件 :</view>
+
+<!-- 4.hover-start-time 点击的时候多久view组件设置hover-class -->
+
+<!-- 5.hover-stop-propagation 是否阻止父组件也出现点击状态 -->
+
+
