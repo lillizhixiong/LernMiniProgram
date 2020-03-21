@@ -1,3 +1,15 @@
 <!--pages/home/home.wxml-->
 <text class="title">pages/home/home.wxml</text>
 <button  type="primary">爱过</button>
+
+
+<view>
+<!-- 1.公共属性:  -->
+  <!-- id/class/style/hidden/data-* / bind/catch -->
+
+<!-- 1.hidden属性 : 组件是否显示 -->
+
+<view hidden='{{false}}'>
+  hello world
+</view>
+</view>
