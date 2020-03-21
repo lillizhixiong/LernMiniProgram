@@ -1,0 +1,28 @@
+<!--pages/input/input.wxml-->
+<!-- 1.input组件的基本使用 -->
+<input></input>
+
+<!-- 2.input组件的默认值value -->
+<input value="哈哈哈"></input>
+
+<!-- 3.input组件的type:决定键盘的类型(英文+符号/数字/身份证) -->
+<input type="text"></input>
+<!-- 4.只能输入数字 -->
+<input type="number"></input>
+
+<!-- 5.身份证idcard -->
+<input type="idcard"></input>
+
+<!-- 6.输入密码 -->
+<input password></input>
+
+<!-- 7.comfirm-type : 键盘右下角 显示: 确认 / 搜索 / 返回 / 发送  -->
+<input comfirm-type='return'></input>
+
+<!-- ------------------------------------------------- -->
+
+<!-- 8.input的事件 -->
+<!-- input:  bindinput -->
+<input bindinput="handleInput"></input>
+
+<input bindfocus="handleFocus"></input>
