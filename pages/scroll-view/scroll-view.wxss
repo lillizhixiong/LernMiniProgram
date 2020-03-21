@@ -1,0 +1,20 @@
+/* pages/scroll-view/scroll-view.wxss */
+
+.scroll-x {
+  height: 150px;
+  background: yellowgreen;
+  /* 内容不换行 */
+  white-space: nowrap;   
+}
+.item1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 5px;
+}
+
+
+.scroll-y {
+  height: 200px;
+}

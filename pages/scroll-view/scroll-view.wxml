@@ -1,0 +1,16 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+<!-- 1.用于局部滚动 -->
+
+<!-- 2.左右滚动 scroll-x 属性-->
+<scroll-view scroll-x class="scroll-x">
+  <view wx:for='{{100}}' class="item1">{{item}}</view>
+</scroll-view>
+
+<!-- 3.上下滚动 scroll-y 属性 -->
+
+<scroll-view class="scroll-y" scroll-y>
+  <view wx:for = "{{100}}">{{item}}</view>
+</scroll-view>
+
+<!-- 4.scroll-view 绑定一个bindscroll事件 -->
+<scroll-view bindscroll='handleScroll'></scroll-view> 
