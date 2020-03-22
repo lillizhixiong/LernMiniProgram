@@ -1,0 +1,14 @@
+<!-- 1. wx:for 列表渲染基础 -->
+<!-- 1.1遍历数组/字符串/数字 -->
+<view>
+  <!-- 遍历数字 -->
+  <view wx:for='{{10}}'>{{item}}</view>
+</view>
+  <!-- 遍历字符串 -->
+<view wx:for="lizhixiong">{{item}}</view>
+
+<!-- 遍历数组 -->
+<view wx:for='{{["abc","cba","nba"]}}'>
+  {{item}}
+</view>
+
