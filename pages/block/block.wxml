@@ -1,0 +1,9 @@
+<!--pages/block/block.wxml-->
+<!-- 1.block标签的基本使用: 不会被喧嚷 -->
+<block>
+  hello, lizhixiong
+</block>
+
+
+<!-- 2.item和index起别名 -->
+<view wx:for='{{movies}}' wx:for-item='movie'>{{movie}}</view>
