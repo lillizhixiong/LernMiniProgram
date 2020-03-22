@@ -1,0 +1,16 @@
+<!-- 1.条件判断 wx:if------ -->
+<view>--------1.条件判断wx:if------------</view>
+<button bindtap="handleSwitch">切换显示</button>
+<view wx:if="{{isShow}}">哈哈哈</view>
+<view wx:else>呵呵呵</view>
+
+
+
+<view>----------wx:elif----------------</view>
+
+
+<view>2.hidden属性</view>
+<view hidden>
+  组件的显示和隐藏
+</view>
+111111
