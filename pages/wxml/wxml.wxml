@@ -1,0 +1,22 @@
+<!-- 1.wxml的格式 -->
+<!-- 类似于html -->
+<!-- 
+<view></view>  <button></button> <text></text> <image></image>
+scroll-view
+ -->
+
+ <!-- 2.msus语法{{}} 里面支持表达式 -->
+
+ <view>{{message}}</view>
+
+ <view>{{lastName}} {{firstName}}</view>
+
+ <view>{{lastName +' '+ firstName}}</view>
+
+ <view>{{ age >=18? '成年人': "未成年" }}</view>
+<!-- 需求 页面实时显示时间 -->
+<view>{{nowTime}}</view>
+
+<button bindtap="handleSwitchColor">切换颜色</button>
+
+<view class="box {{isActive? 'active': ''}}">li zhixioong 哈哈</view>
