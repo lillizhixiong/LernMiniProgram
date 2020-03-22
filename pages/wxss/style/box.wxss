@@ -1,0 +1,9 @@
+.box1 {
+  color: red;
+  font-size: 32rpx;
+}
+
+.box2 {
+  color: greenyellow;
+  font-size: 32rpx;
+}

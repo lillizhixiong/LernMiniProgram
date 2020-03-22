@@ -1,0 +1,13 @@
+<!--pages/wxss/wxss.wxml-->
+
+<!-- 样式分开管理: 可以导入 @import '路径' -->
+<view class="box1">
+  我是box1
+</view>
+
+<view class="box2">
+  我是box2
+</view>
+
+
+<!-- 1.使用官方样式库开发搜索框 WEUI -->

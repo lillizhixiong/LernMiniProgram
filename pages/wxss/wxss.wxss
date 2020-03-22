@@ -1,0 +1,3 @@
+/* pages/wxss/wxss.wxss */
+/* 引入wxss文件 */
+@import './style/box.wxss';
