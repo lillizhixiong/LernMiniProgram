@@ -1,0 +1,14 @@
+//JS代码
+var message = 'lizhixiong';
+var name = 'coderwhy';
+
+var sum = function (num1, num2) {
+  return num1 + num2;
+}
+
+// 使用commonjs的导出方式
+module.exports = {
+  name: name,
+  message: message,
+  sum: sum
+}

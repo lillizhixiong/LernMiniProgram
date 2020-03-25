@@ -1,0 +1,53 @@
+<!--wxs/wxs.wxml-->
+<!-- 微信的中wxs -->
+<!-- 
+1. 在微信的{{}}语法中不能里面直接调用Page里面定义的方法
+解决这个方法: 可以使wxs 中定义方法 导出
+ -->
+
+<!--1. 错误的写法 -->
+<!-- <view>{{6.6667.toFixed(2)}}</view> -->
+
+<!-- sayHi 是page中定义的方法: 不能直接调用 -->
+<!-- <view>
+  hello,{{ sayHi() }}
+</view> -->
+
+<!-- 2. wxs的定义方式 -->
+<!-- 2.1直接在wxml中定义,一般要抽离出去 -->
+<!-- 不能写es6语法 -->
+
+<!-- <wxs module='info'>
+  //JS代码
+  var message = 'lizhixiong';
+  var name = 'coderwhy';
+
+  var sum = function(num1, num2) {
+    return num1 + num2;
+  }
+
+  // 使用commonjs的导出方式
+  module.exports = {
+    name: name,
+    message: message,
+    sum: sum
+  }
+</wxs> -->
+
+<!-- 2.2 定义在单独的wxs文件中,在使用<wxs>标签进行导入 -->
+<!-- 不能使用绝对路径,必须使用相对路径 -->
+<!-- 使用wxs定义的导出的变量,方法 -->
+<wxs src='info/info.wxs' module='info' />
+
+
+<view>{{info.name}}</view>
+
+<view>{{info.message}}</view>
+<!-- 定义在page/component中的方法不能使用, 但可以使用wxs中导出的方法 -->
+<view>{{info.sum(4,5)}}</view>
+
+<wxs src='./priceFormat/priceFormat.wxs'  module='price'/>
+<!-- 3.wxs的实际应用 -->
+<!-- 3.1 可以定义过滤函数,方便页面直接调用该方法.正常情况下这种做法无效-->
+<view>{{price.priceFormat(700)}}</view> 
+
