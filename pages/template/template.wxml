@@ -1,0 +1,18 @@
+<view>----------template------------------</view>
+<!-- 1.模板: 代码复用, 和自定义组件一样 -->
+<!-- 之前小程序不支持自定义组件时,为了达到代码复用的效果 -->
+<!-- 单独抽离一个文件,通过import引入 -->
+<!-- <import src='定义模板路径'> -->
+
+<!-- 模板中包裹的内容,在没有被使用前,是不会进行任何渲染的 -->
+<!-- <template name="container">
+  <button>{{btnText}}</button>
+  <button size="mini">按钮</button>
+  <view>{{content}}</view>
+</template> -->
+<import src='/wxml/template.wxml' />
+<!-- 使用模板:is -->
+<template is="container"  data="{{btnText:'按钮',content:'hello, world'}}"/>
+<template is="container" data="{{btnText:'警告',content:'hello, hhhh'}}"/>
+<template is="container" />
+<template is="container" />

@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/template/template",
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap24.json"
 }
