@@ -1,3 +1,44 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<!-- 1.事件处理的回顾 -->
+<button bindtap="handleBtnClick">唐伯虎</button>
+
+<!-- 2.常见的事件 -->
+<!-- 2.1 touchstart 手开始触摸 -->
+<!-- 2.2 touchmove  手移动 -->
+<!-- 2.3 touchend 手离开 -->
+<!-- 2.4 tap手点击 -->
+<!-- 2.5 longtap 长按 -->
+
+<view class="box"
+      bindtouchstart = 'handleTouchStart'
+      bindtouchmove="handleTouchMove"
+      bindtouchend="handleTouchEnd"
+      bindtap="handleTap"
+      bindlongtap="handleLongTap"
+></view>
+
+
+<!-- 3.事件对象的分析 -->
+
+<button size="mini" type="primary" bindtap="handleEventClick"> 事件对象</button>
+
+
+<!-- 4.事件的传递参数: 设置自定义属性data- 不能放在方法中传过去-->
+<view class="container">
+  <block wx:for='{{titles}}' wx:key="{{index}}"> 
+  <view 
+      class="item" 
+      bindtap="handleItemClick" 
+      data-index='{{index}}'
+      data-item = '{{item}}'
+      >{{item}}</view>
+  </block>
+</view>
+
+
+<!-- 5.事件冒泡和事件捕获 -->
+
+<view class="view1">
+  <view class="view2">
+    <view class="view3"></view>
+  </view>
+</view>
