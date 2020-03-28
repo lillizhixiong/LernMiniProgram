@@ -1,0 +1,23 @@
+/* components/li-tab-control/li-tab-control.wxss */
+.tab-control {
+  height: 88rpx;
+  line-height: 88rpx;
+  /* background-color: orange; */
+  display: flex;
+}
+
+.tab-control-item {
+  flex: 1;
+  text-align: center;
+  /* background-color: orange; */
+
+}
+
+.tab-control-item.active {
+  color: red;
+}
+ 
+.tab-control-item.active text {
+  padding: 10rpx 20rpx;
+  border-bottom: 6rpx solid red;
+}

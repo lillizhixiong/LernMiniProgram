@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "li-tab-control": "/components/li-tab-control/li-tab-control"
+  }
 }
