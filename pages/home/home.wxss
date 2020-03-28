@@ -3,3 +3,12 @@
   font-size: 30px;
   color: red;
 }
+
+/* 将样式传递到组件中*/
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}

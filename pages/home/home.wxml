@@ -1,3 +1,8 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+
+
+<!-- 
+1.组件向外部传递数据,自定义事件 
+  要在components的js文件中定义methods属性定义事件
+-->
+<view>当前计算: {{counter}}</view>
+<my-event bind:add = 'handleAdd'/>

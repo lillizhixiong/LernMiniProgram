@@ -1,0 +1,1 @@
+<button size="mini" type='primary' bindtap='handleAdd'>组件内部的按钮 + 1</button>
