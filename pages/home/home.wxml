@@ -1,3 +1,18 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<!-- 1.插槽的使用 :单个插槽-->
+<my-slot>
+  <!-- 1.插入按钮 -->
+  <button size="mini" type="primary">我是插入的按钮</button>
+</my-slot>
+
+<my-slot>
+  <text>hello, 我是你爹</text>
+</my-slot>
+<view>--------------------</view>
+<!-- 2. 多个插槽的使用 -->
+<!-- 注意事项: -->
+  <!-- 1.使用插槽时,要给每个插槽起一个name属性 -->
+  <!-- 2.给components.js文件添加一个options:{mutipleSlots: true} -->
+
+<my-mslot>
+  <text slot='slot2'>我是slot2</text>
+</my-mslot>
