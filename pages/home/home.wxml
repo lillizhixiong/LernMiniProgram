@@ -1,3 +1,17 @@
 <!--pages/home/home.wxml-->
 <text class="title">pages/home/home.wxml</text>
 <button  type="primary">爱过</button>
+
+
+
+<!-- 1.使用自定义组件的步骤 -->
+<!-- 1.1  先在使用组件的json文件注册该组件  标签名:组件的路径  -->
+<!-- 1.2 也可以在全局的app.json中注册全局组件 -->
+
+<!-- <my-cpn /> -->
+
+
+<!-- 2.自定义组件的样式细节 -->
+<!-- 2.1 组件设置的样式不会对首页的样式造成影响,两种不相互影响 -->
+<!-- 2.2 如果希望两种相互影响,可以在组件的js文件上设置: options: { styleIsolation: 'isolated' } -->
+<my-style />
