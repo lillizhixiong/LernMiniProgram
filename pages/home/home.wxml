@@ -1,3 +1,10 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+
+
+<!-- 1.直接获取该组件和修改组件内部的数据 -->
+<!-- 选中当前组件获取数据和调用方法 -->
+<!-- 首先获取该组件对象:this.selectComponent('class/id') -->
+<!-- 然后调用组件内部的事件或者属性 -->
+
+<my-sel id='sel-id'/>
+
+<button size="mini" type="primary" bind:tap='handleAddCpn'>修改组件内部的计算+1</button>

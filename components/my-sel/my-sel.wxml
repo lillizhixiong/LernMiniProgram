@@ -1,0 +1,4 @@
+
+<view>
+  组件内当前计算: {{counter}}
+</view>
