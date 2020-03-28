@@ -14,7 +14,39 @@ Page({
   onLoad: function (options) {
 
   },
+  handleShowToast() {
+    wx.showToast({
+      title: '你好啊',
+    })
+  },
 
+  handleShowModal() {
+    wx.showModal({
+      title: '我是标题哦',
+      content: '哈哈哈哈',
+    })
+  },
+
+  handleShowLoading() {
+    // 这个加载需要手动关闭  调用wx.hide()
+    wx.showLoading({
+      title: '加载ing',
+    })
+
+    setTimeout(()=> {
+      wx.hideLoading()()
+    },1000000)
+  },
+
+  handleShowActionSheet() {
+    wx.showActionSheet({
+      itemList: ['相册', '拍照'],
+      success: (res) => {
+        console.log(res)
+      }
+
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,3 +1,12 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<!-- 1. Toast : 弹窗 -->
+<button size="mini" type="primary" bind:tap='handleShowToast'>showToast</button>
+<view></view>
+<!-- 2.Modal 确定或者取消 -->
+<button size="mini" type="primary" bindtap="handleShowModal">showModal</button>
+
+<!-- 3.loading 加载中 -->
+<button type="primary" size="mini" bind:tap='handleShowLoading'>加载更多</button>
+
+
+<!-- 4.actionSheet -->
+<button type="primary" size="mini" bind:tap='handleShowActionSheet'>请选择....</button>
