@@ -1,3 +1,2 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<view>--- 网络请求的使用 -----</view>
+<view>对网络请求进行封装</view>
