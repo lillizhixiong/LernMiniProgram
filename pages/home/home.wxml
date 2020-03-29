@@ -1,3 +1,1 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<button size='mini' type='primary' open-type='share'>分享</button>

@@ -58,9 +58,14 @@ Page({
   },
 
   /**
-   * 用户点击右上角分享
+   * 用户点击右上角分享(两种方式)
    */
+  // 第二种分享的方式是: 使用button按钮  设置 open-data ='share'
   onShareAppMessage: function () {
-
+    return {
+      title: 'hello,李银河',
+      path:"", // '点击跳转的页面'
+      imageUrl: "" // 分享页面 显示的图片
+    }
   }
 })
