@@ -1,3 +1,28 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<!-- 1.页面跳转navigator: 有返回按钮-->
+<navigator url="/pages/detail/detail">跳转到详情页</navigator>
+<view>使用open-type='navigate' 默认(本页面没有被关闭,被覆盖)</view>
+
+<navigator url="/pages/detail/detail" open-type="redirect">跳转到详情页</navigator>
+<view>使用open-type='redirect' 默认(本页面被关闭),不能到tabbar中</view>
+
+<navigator url="/pages/detail/detail" open-type="switchTab">跳转到详情页</navigator>
+<view>使用open-type='switchTab' 跳转到tabbar中</view>
+
+
+<navigator url="/pages/detail/detail" open-type="reLaunch">跳转到详情页</navigator>
+<view>使用open-type='reLaunch' 关掉所有页面跳转到该页面</view>
+
+<navigator url="/pages/detail/detail" open-type="navigateBack"  delta='1'>返回</navigator>
+<view>使用open-type='navigateBack' 退回到上一步 delta='1' 返回上一层</view>
+
+
+
+
+<view>------------2. 跳转过程过程中数据的传递--------------</view>
+<navigator url="/pages/detail/detail?name=lizhixiong&age=18&height=1.88">跳转到详情页</navigator>
+<view>在详情页的onLoad生命周期获取</view>
+
+
+<view>------------3. 通过代码的方式进行跳转----------------------------------------</view>
+
+<button bindtap="handlePushDetail">跳转到详情页</button>

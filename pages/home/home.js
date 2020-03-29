@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  handlePushDetail() {
+    wx.navigateTo({
+      url: '/pages/detail/detail? name=你好啊',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
