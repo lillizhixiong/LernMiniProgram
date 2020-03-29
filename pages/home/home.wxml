@@ -1,3 +1,35 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<view>小程序登录的流程:</view>
+<view>
+  一般小程序在app.js中生命周期onlanuch中进行登录
+</view>
+
+<view>
+1.微信客户端通过wx.login({
+success:(res) => {
+  let code = res.code;
+
+  wx.request({
+    url: "",
+    method: "post",
+    data: {
+      code:code
+    }
+  })
+}
+})向微信服务器发送获取code(code有效期5分钟)
+</view>
+<view>
+  2. 然后通过wx.request({}) 向公司服务器发送code(有时候还需要账号和密码)
+</view>
+
+<view>
+  3. 公司服务器 appid + appscret + code 向微信服务器获取session_key和openid(微信用户的唯一标识),
+
+  将openid存在数据库中,并自定登录状态(token)与openid和sesion_key关联, 将登录状态返回给客户端
+
+
+</view>
+
+<view>
+  4. 微信客户端拿到token登录状态, 保存在globalData中,和setlocalstorge中
+</view>
