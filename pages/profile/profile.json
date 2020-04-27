@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "li-header": "child-cpn/li-header/li-header",
+    "li-info": "child-cpn/li-info/li-info",
+    "li-list-view": "child-cpn/li-list-view/li-list-view"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "个人中心"
+}

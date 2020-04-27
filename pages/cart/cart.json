@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "li-bottom-bar": "./child-cpn/li-bottom-bar/li-bottom-bar"
+  },
+  "navigationBarTitleText": "我的购物车"
+}

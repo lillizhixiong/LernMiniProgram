@@ -1,0 +1,8 @@
+<view class='profile'>
+  <li-header />
+  <li-info />
+
+  <li-list-view info='{{orderList}}'/>
+  <li-list-view info='{{ serviceList }}'/>
+
+</view>

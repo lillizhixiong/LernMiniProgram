@@ -1,0 +1,8 @@
+<view class="list-view">
+    <block wx:for="{{ info }}" wx:key="*this">
+      <view class="list-item">
+        <image src="/assets/image/profile/{{ item.icon }}"></image>
+        <text>{{ item.title }}</text>
+      </view>
+    </block>
+</view>

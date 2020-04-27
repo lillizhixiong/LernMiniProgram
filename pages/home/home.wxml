@@ -1,3 +1,21 @@
-<!--pages/home/home.wxml-->
-<text class="title">pages/home/home.wxml</text>
-<button  type="primary">爱过</button>
+<!-- 1.展示轮播图 -->
+<li-swiper list="{{banners}}" />
+
+<!-- 2.推荐数据展示 -->
+<li-recommend recommends="{{recommends}}" bind:imageLoad = 'handleImageLoad'/>
+
+<!-- 3.流行数据展示 -->
+<li-popular />
+
+<!-- 4.tab控制切换 -->
+<li-tab-control titles="{{titles}}" bind:tabItemClick="handleTabClick" class='{{isTabFixed ? "fixed": ""}}' id='tab-control'/>
+
+<li-tab-control titles="{{titles}}" wx:if="{{ isTabFixed }}"/>
+<!-- <li-tab-control titles="{{titles}}" /> -->
+
+<!-- 5.商品列表展示 -->
+<li-goods 
+goods="{{goods[currentType].list}}" />
+
+<!-- 6.回到顶部 -->
+<li-back-top wx:if="{{isShowBackTop}}" />

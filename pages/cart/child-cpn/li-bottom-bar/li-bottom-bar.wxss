@@ -1,0 +1,36 @@
+/* pages/cart/child-cpn/li-bottom-bar/li-bottom-bar.wxss */
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  padding-left: 30rpx;
+  background: #eee;
+  font-size: 28rpx;
+}
+
+.check-box {
+  display: flex;
+  width: 150rpx;
+  align-items: center;
+}
+
+.counter {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.payment {
+  width: 200rpx;
+  background: #ff4500;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+}

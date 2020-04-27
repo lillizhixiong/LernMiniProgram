@@ -1,0 +1,8 @@
+
+.profile {
+  height: 100%;
+  /* background: red; */
+}
+
+
+/* pages/profile/childCpns/w-info/w-info.wxss */

@@ -1,0 +1,9 @@
+<view class='bottom-bar'>
+  <view class="check-box">
+      <icon type="success" size="18"></icon> 
+      <view>全选</view>
+  </view>
+  <view class="counter">总计:¥{{ price }}</view>
+
+  <view class='payment'>去计算({{counter}})</view>
+</view>

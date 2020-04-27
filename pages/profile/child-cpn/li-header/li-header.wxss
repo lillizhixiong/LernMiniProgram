@@ -1,0 +1,50 @@
+.header {
+  display: flex;  
+  height: 170rpx;
+  padding: 12rpx 30rpx;
+  background-color: #ff5777;
+  color: #fff;
+}
+
+.avatar image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.login-info {
+  margin-left: 30rpx;
+  vertical-align: middle;
+
+}
+
+.login-info .login {
+  font-size: 36rpx;
+  margin-top: 18rpx;
+}
+
+.login-info .phone {
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.phone image {
+  width: 36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  position: relative;
+  bottom: 4rpx;
+}
+
+.arrow {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 30rpx;
+}
+
+.arrow image {
+  width: 60rpx;
+  height: 60rpx;
+}

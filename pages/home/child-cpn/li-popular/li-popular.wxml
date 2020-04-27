@@ -1,0 +1,3 @@
+<view class='popular'>
+  <image src="/assets/image/home/popular_bg.jpg" model='widthFix'></image>
+</view>
